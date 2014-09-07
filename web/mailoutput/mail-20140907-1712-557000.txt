@@ -1,0 +1,10 @@
+To: recipient@example.com
+Subject: Hello Email
+Message-ID: <a59402ad85908f3c43a2ced5ebe3bbe2@localhost>
+Date: Sun, 07 Sep 2014 19:12:16 +0200
+From: send@example.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Mailbody
