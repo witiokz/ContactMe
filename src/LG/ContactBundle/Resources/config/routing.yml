@@ -1,0 +1,4 @@
+_main:
+    resource: "@LGContactBundle/Controller/ContactController.php"
+    type:     annotation
+    prefix:   /

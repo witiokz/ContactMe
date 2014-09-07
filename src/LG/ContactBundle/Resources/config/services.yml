@@ -1,0 +1,4 @@
+services:
+    contact_service_class:
+        class:        LG\ContactBundle\Services\ContactService
+        arguments:    ["@doctrine.orm.entity_manager"]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/lgcontact/css/bootstrap.min.css') }}" />
+        <title></title>
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+    {% block body %}
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+            <div class="alert alert-success" role="alert">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+
+        <div class="block">
+            {% block content %}{% endblock %}
+        </div>
+
+    {% endblock %}
+    </div>
+</body>
+</html>
+
